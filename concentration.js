@@ -9,7 +9,6 @@ on("change:graphic:bar1_value", function(obj, prev) {
             if (calc_conc_DC > final_conc_DC) {
                 final_conc_DC = Math.floor(calc_conc_DC);
             }
-            
             sendChat("TokenDamage", "/w gm &{template:npcaction} {{rname=Concentration Check}} {{description=[DC " +final_conc_DC + " Constitution](~selected|constitution_save)"+ "&#10;" +"*[Toggle Concentration Marker](!token-mod --sel --set statusmarkers|!Concentrating)*}}");        }
     }
 });
